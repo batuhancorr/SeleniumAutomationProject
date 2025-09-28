@@ -18,7 +18,7 @@ public class RegisterUserTest {
     WebDriver driver;
 
     @Test
-    public void testUserRegistration() throws InterruptedException {
+    public void testUserRegistration() {
         driver = Driver.getDriver();
         driver.get(ConfigReader.getProperty("url"));
 
@@ -68,7 +68,7 @@ public class RegisterUserTest {
         driver.findElement(By.id("state")).sendKeys("Sinop");
         driver.findElement(By.id("city")).sendKeys("Gerze");
         driver.findElement(By.id("zipcode")).sendKeys("57600");
-        driver.findElement(By.id("mobile_number")).sendKeys("5431234567");
+        driver.findElement(By.id("mobile_number")).sendKeys("5449304798");
 
         // 13. Create Account
         driver.findElement(By.xpath("//button[text()='Create Account']")).click();
@@ -82,6 +82,8 @@ public class RegisterUserTest {
         WebElement continueBtn = wait.until(ExpectedConditions.elementToBeClickable(
                 By.xpath("//a[text()='Continue']")));
         continueBtn.click();
+
+        //test satırıdır
 
         // 16. 'Logged in as username' görünür mü?
         WebElement loggedInText = wait.until(ExpectedConditions.visibilityOfElementLocated(
