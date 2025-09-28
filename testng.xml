@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Test Suite">
+    <test name="Product Search Test">
+        <classes>
+            <class name="tests.SearchProductTest"/>
+            <class name="tests.CartTest"/>
+        </classes>
+    </test>
+</suite>
