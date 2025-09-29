@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        maven 'maven-3'   // Jenkins’te Tools’ta verdiğin isim
+        maven 'Maven3'   // Jenkins’te Tools’ta verdiğin isim
     }
     stages {
         stage('Kod Çek') {
